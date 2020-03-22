@@ -24,7 +24,7 @@ namespace UserDataCollector
             }
             Console.WriteLine(userInfo.ToString());
             
-            Console.Write("\nPress any button to finish the program");
+            Console.WriteLine("\nPress any button to finish the program");
             Console.ReadKey();
         }
         
@@ -42,7 +42,7 @@ namespace UserDataCollector
         
         static bool NeedMoreData()
         {
-            Console.Write("Would you like to add more? (y/n)");
+            Console.Write("Would you like to add more? (y/n): ");
             var answer = Convert.ToString(Console.ReadLine());
 
             return answer.Length > 0 && answer[0] == 'y';
